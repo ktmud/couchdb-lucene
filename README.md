@@ -1,3 +1,9 @@
+# To Enable MMSEG
+
+Init the submodule mmseg4j, build it with `ant jar-with-dic`, ant run
+    
+    mvn install:install-file -Dfile=src/mmseg4j/build/mmseg4j-all-${mmseg_version}-with-dic.jar  -DgroupId=com.chenlb -DartifactId=mmseg4j -Dversion=${mmseg_version} -Dpackaging=jar -DgeneratePom=true
+
 <h1>Version Compatibility</h1>
 
 CouchDB-Lucene works with all version of CouchDB from 0.10 upwards.

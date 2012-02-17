@@ -19,7 +19,7 @@
           <version>1.8.5</version>
           <scope>runtime</scope>
           <!--<scope>system</scope>-->
-          <!--<systemPath>/root/packa/mmseg4j-read-only/build/mmseg4j-all-1.8.5-with-dic.jar</systemPath>-->
+          <!--<systemPath>${basedir}/repo/com/chenlb/mmseg4j/1.8.5/mmseg4j-1.8.5.jar</systemPath>-->
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -124,6 +124,7 @@
         <tika-version>1.0</tika-version>
         <jetty-version>6.1.20</jetty-version>
         <http-version>4.0.1</http-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <issueManagement>
         <system>github</system>
