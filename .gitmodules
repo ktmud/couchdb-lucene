@@ -1,3 +1,3 @@
 [submodule "src/mmseg4j"]
 	path = src/mmseg4j
-	url = git@github.com:ktmud/mmseg4j.git
+	url = https://github.com:ktmud/mmseg4j.git
