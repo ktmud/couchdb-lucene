@@ -48,6 +48,10 @@
   </files>
   <dependencySets>
     <dependencySet>
+      <scope>system</scope>
+      <outputDirectory>/lib</outputDirectory>
+    </dependencySet>
+    <dependencySet>
       <scope>runtime</scope>
       <outputDirectory>/lib</outputDirectory>
     </dependencySet>
