@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var dic = {};
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
+var reg_newline = /[\n\r]+/;
+
+process.stdin.on('data', function (chunk) {
+  var arr = chunk.split(reg_newline);
+  for (var i in arr) {
+    dic[arr[i]] = 1;
+  }
+});
+
+process.stdin.on('end', function (chunk) {
+  var keys = Object.keys(dic);
+  process.stdout.write(keys.join('\n'));
+});
+
