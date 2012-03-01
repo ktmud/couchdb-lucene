@@ -41,8 +41,9 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.th.ThaiAnalyzer;
 import org.json.JSONException;
 import org.json.JSONObject;
-//import cwss.chenlb.mmseg4j.analysis.MMSegAnalyzer;
-import cwss.analysis.analyzer.cwssAnalyzer;
+//import com.chenlb.mmseg4j.analysis.MMSegAnalyzer;
+//import cwss.analysis.analyzer.cwssAnalyzer;
+import org.wltea.analyzer.lucene.IKAnalyzer;
 
 public enum Analyzers {
 
@@ -52,16 +53,28 @@ public enum Analyzers {
             return new BrazilianAnalyzer(Constants.VERSION);
         }
     },
-    CWSS {
+    IK {
         @Override
         public Analyzer newAnalyzer(final String args) {
-            return new cwssAnalyzer();
+            return new IKAnalyzer(true);
         }
     },
+    //PAODING {
+        //@Override
+        //public Analyzer newAnalyzer(final String args) {
+            //return new paodingAnalyzer(Constants.VERSION);
+        //}
+    //},
+    //CWSS {
+        //@Override
+        //public Analyzer newAnalyzer(final String args) {
+            //return new cwssAnalyzer(Constants.VERSION);
+        //}
+    //},
     //MMSEG {
         //@Override
         //public Analyzer newAnalyzer(final String args) {
-            //return new MMSegAnalyzer();
+            //return new MMSegAnalyzer(Constants.VERSION);
         //}
     //},
     CHINESE {

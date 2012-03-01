@@ -45,6 +45,21 @@
       <fileMode>755</fileMode>
       <outputDirectory>/tools/etc/init.d/couchdb-lucene</outputDirectory>
     </file>
+    <file>
+      <source>${project.basedir}/src/IKAnalyzer/IKAnalyzer.cfg.xml</source>
+      <fileMode>644</fileMode>
+      <outputDirectory>/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${project.basedir}/src/IKAnalyzer/ext_stopword.dic</source>
+      <fileMode>644</fileMode>
+      <outputDirectory>/lib</outputDirectory>
+    </file>
+    <file>
+      <source>${project.basedir}/src/IKAnalyzer/words-all.dic</source>
+      <fileMode>644</fileMode>
+      <outputDirectory>/lib</outputDirectory>
+    </file>
   </files>
   <dependencySets>
     <dependencySet>
